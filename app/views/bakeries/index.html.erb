@@ -1,0 +1,11 @@
+<h1>Index</h1>
+<ul>
+  <% @bakeries.each do |bakery| %>
+    <li><%= bakery.name %></li>
+    <li><%= bakery.street %></li>
+    <li><%= bakery.zip %></li>
+    <li><%= bakery.city %></li>
+    <li><%= bakery.latitude %></li>
+    <li><%= bakery.longitude %></li>
+  <% end %>
+</ul>
