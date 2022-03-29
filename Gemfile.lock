@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 91950218dd39119e420ca431fc9fae09b53986c7
+  branch: master
+  specs:
+    faker (2.20.0)
+      i18n (>= 1.8.11, < 2)
+
+GIT
   remote: https://github.com/heartcombo/simple_form.git
   revision: 159f4015973c5f57b05253308bbaedc238dbbe07
   specs:
@@ -103,8 +111,6 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.7.0)
-    faker (2.20.0)
-      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     font-awesome-sass (6.1.1)
       sassc (~> 2.0)
@@ -256,7 +262,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   dotenv-rails
-  faker
+  faker!
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.3)
