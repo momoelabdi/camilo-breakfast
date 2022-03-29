@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #FFEDDB;
+}
+
+.button-add {
+  height: 30px;
+  width: 58px;
+  position: absolute;
+  top: 85px;
+  right: 16px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  justify-content: center;
+}
+
+// height: 30px;
+// width: 58px;
+// left: 228px;
+// top: 86px;
+// border-radius: 0px;
