@@ -8,11 +8,19 @@
   position: absolute;
   top: 85px;
   right: 16px;
-  background-color: var(--color-primary);
-  border-radius: 8px;
-  font-size: 14px;
-  color: white;
-  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px -8px 24px 0px #FFEDDB inset;
+  border-radius: 20px;
+    p{
+      font-size: 14px;
+      color: #000;
+      opacity: 0.7;
+      justify-content: center;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
 }
 
 // height: 30px;
@@ -20,3 +28,7 @@
 // left: 228px;
 // top: 86px;
 // border-radius: 0px;
+
+// font-family: Roboto;
+// font-size: 14px;
+// font-style: normal;
