@@ -1,0 +1,28 @@
+<nav class="bottom_navbar">
+  <ul>
+    <li>
+      <a href="#" class="active">
+        <ion-icon name="home" ></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="<%= bakeries_path %>">
+        <ion-icon name="search"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <ion-icon name="cart"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <% if user_signed_in? %>
+        <%= link_to '<ion-icon name="log-out"></ion-icon>'.html_safe, destroy_user_session_path, method: :delete %>
+      <% else %>
+        <a href="<%= user_session_path %>">
+          <ion-icon name="person"></ion-icon>
+        </a>
+      <% end %>
+    </li>
+  </ul>
+</nav>
