@@ -1,19 +1,16 @@
-<%# <%= image_tag "show.jpg", :id "pig"%>
-<h1><%= @bakery.name %></h1>
-<p><%= @bakery.street %></p>
-<p><%= @bakery.zip %></p>
-<p><%= @bakery.city %></p>
+<%= image_tag "show.jpg", id: 'pig'%>
+<div class="bakery_card">
+  <h1><%= @bakery.name %></h1>
+  <p><%= @bakery.street %>, <%= @bakery.zip %>, <%= @bakery.city %></p>
+</div>
 
-
-
-
-<div class="container">
-  <%# <%= image_tag "bakpic.jpg", :id "pic"%>
-  <% @bakery.products.each do |product| %>
-    <ul>
-        <li><h1><%= product.name %></h1></li>
-        <li><%= product.details %></li>
-        <li><%= product.price %>chf</li>
-    </ul>
-  <% end %>
+<div class="card-product">
+  <%= image_tag "bakpic.jpg",class: "pic" %>
+  <div class="card-product-infos">
+    <% @bakery.products.each do |product| %>
+      <h2><%= product.name %></h2>
+      <p><%= product.details %></p>
+      <p><strong><%= product.price %>:CHF</strong></p>
+    <% end %>
+  </div>
 </div>
