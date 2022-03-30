@@ -1,0 +1,35 @@
+.bottom_navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: gray;
+  z-index: 999;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    &:active {
+      color: red;
+    }
+
+    li a {
+    }
+
+    li a ion-icon {
+      color: black;
+      font-size: 30px;
+      transition: all .3s;
+
+      // &:hover {
+      //   transform: scale(1.7);
+      // }
+    }
+  }
+}
