@@ -16,9 +16,13 @@
       </a>
     </li>
     <li>
-      <a href="<%= user_session_path %>">
-        <ion-icon name="person"></ion-icon>
-      </a>
+      <% if user_signed_in? %>
+        <%= link_to '<ion-icon name="log-out"></ion-icon>'.html_safe, destroy_user_session_path, method: :delete %>
+      <% else %>
+        <a href="<%= user_session_path %>">
+          <ion-icon name="person"></ion-icon>
+        </a>
+      <% end %>
     </li>
   </ul>
 </nav>
