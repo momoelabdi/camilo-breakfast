@@ -1,0 +1,19 @@
+<%# <%= image_tag "show.jpg", :id "pig"%>
+<h1><%= @bakery.name %></h1>
+<p><%= @bakery.street %></p>
+<p><%= @bakery.zip %></p>
+<p><%= @bakery.city %></p>
+
+
+
+
+<div class="container">
+  <%# <%= image_tag "bakpic.jpg", :id "pic"%>
+  <% @bakery.products.each do |product| %>
+    <ul>
+        <li><h1><%= product.name %></h1></li>
+        <li><%= product.details %></li>
+        <li><%= product.price %>chf</li>
+    </ul>
+  <% end %>
+</div>
