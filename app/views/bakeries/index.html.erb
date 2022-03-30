@@ -5,6 +5,7 @@
     </div>
     <ul>
       <% @bakery.each do |bakery| %>
+      <a href="<%= bakery_path(bakery) %>">
         <div class="card-bakery">
           <div class="button-add"><p>10-15 min</p></div>
           <div class="img-bakery">
@@ -14,6 +15,10 @@
           <span class="street"><li><%= bakery.street %>, <%= bakery.zip %> <%= bakery.city %></li></span>
         </div>
       <% end %>
+      </a>
     </ul>
   </div>
 </section>
+
+<%# <%= link_to restaurant.name, restaurant_path(restaurant) %>
+<%# bakery_path(bakery) %>
