@@ -1,1 +1,59 @@
 // Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 188px 0;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  .buttons {
+    margin: 0 auto;
+  }
+}
+
+.img {
+  width: 150px;
+}
+
+.btn-ghost {
+  color: #f9fafb;
+  border: 1px solid #4A4A4A;
+  padding: 8px 43px;
+  border-radius: 50px;
+  font-weight: bold;
+  opacity: 2.6;
+  transition: opacity 0.3s ease;
+  justify-content: space-evenly;
+
+  .btn-ghost:hover {
+    opacity: 1;
+  }
+}
+
+.devise-wrapper {
+  color: #a8a4a4;
+  border: 1px solid rgba(60, 60, 60, 0.24);
+  padding: 17px 19px;
+  border-radius: 18px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  background-color: rgba(60, 60, 60, 0.24);
+}
+
+.form-control {
+  color: #a8a4a4;
+  border-radius: 26px;
+  background-color: rgba(60, 60, 60, 0.24);
+  border: 1px solid rgba(60, 60, 60, 0.24);
+  text-align: center;
+}
