@@ -1,0 +1,18 @@
+<section>
+  <div class="cards-bakery">
+    <div class="map">
+    </div>
+    <ul>
+      <% @bakery.each do |bakery| %>
+        <div class="card-bakery">
+          <div class="button-add"><p>10-15 min</p></div>
+          <div class="img-bakery">
+            <%# <img src="https://images.unsplash.com/photo-1599940778173-e276d4acb2bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1455&q=80" alt=""> %>
+          </div>
+          <span class="name"><li><%= bakery.name %></li></span>
+          <span class="street"><li><%= bakery.street %>, <%= bakery.zip %> <%= bakery.city %></li></span>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</section>
