@@ -1,15 +1,13 @@
 class BakeriesController < ApplicationController
   def index
-    @bakery = Bakery.all
+    if params["query"].present?
+      @bakeries = Bakery.where("name ILIKE ?", "%#{params["query"]}%")
+    else
+      @bakeries = Bakery.all
+    end
   end
 
   def show
     @bakery = Bakery.find(params[:id])
   end
-
-  # private
-
-  # def product_params
-  #   params.require(:product).permit(:name, :details, :price, :discription)
-  # end
 end
