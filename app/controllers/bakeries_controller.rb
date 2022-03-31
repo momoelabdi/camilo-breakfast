@@ -1,15 +1,10 @@
 class BakeriesController < ApplicationController
   def index
-    @bakeries = Bakery.all
-    # @markers = @bakery.geocoded.map do |bakery|
-    #   {
-    #     lat: bakery.latitude,
-    #     lng: bakery.longitude,
-    #     info_window: render_to_string(partial: "info_window", locals: { bakery: bakery }),
-    #     image_url: helpers.asset_url("map.png")
-
-    #   }
-    # end
+    if params["query"].present?
+      @bakeries = Bakery.where("address ILIKE ?", "%#{params["query"]}%")
+    else
+      @bakeries = Bakery.all
+    end
   end
 
   def show
