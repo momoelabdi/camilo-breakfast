@@ -1,6 +1,6 @@
 # require 'faker'
 
-# Bakery.delete_all
+Bakery.delete_all
 
 camilo = Bakery.create!(name: "Chez camilo", discription: "specialiste en petit pains", street: "boulvard camilo", zip: 34 , city:"Monaco", latitude: 345, longitude: 345)
 
