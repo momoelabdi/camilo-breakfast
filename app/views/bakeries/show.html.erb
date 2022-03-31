@@ -4,13 +4,16 @@
   <p><%= @bakery.street %>, <%= @bakery.zip %>, <%= @bakery.city %></p>
 </div>
 
-<div class="card-product">
-  <%= image_tag "bakpic.jpg",class: "pic" %>
-  <div class="card-product-infos">
-    <% @bakery.products.each do |product| %>
-      <h2><%= product.name %></h2>
-      <p><%= product.details %></p>
-      <p><strong><%= product.price %>:CHF</strong></p>
-    <% end %>
+<% @bakery.products.each do |product| %>
+  <div class="card-product">
+    <%= image_tag "bakpic.jpg",class: "pic" %>
+    <div class="card-product-infos">
+      <div class="add-product">
+        <ion-icon name="add"></ion-icon>
+      </div>
+          <h2><%= product.name %></h2>
+          <span class="product-detail"><p><%= product.details %></p></span>
+          <p class="product-price"><%= product.price %> CHF</p>
+    </div>
   </div>
-</div>
+<% end %>
