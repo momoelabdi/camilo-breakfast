@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     end
   end
   devise_for :users
-  resources :bakeries, only: [:index, :show]
+  resources :bakeries, only: [:index, :show] do
+    resources :orders, only: [:new, :create, :show]
+  end
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/my_orders", to: "orders#my_orders"
 end
