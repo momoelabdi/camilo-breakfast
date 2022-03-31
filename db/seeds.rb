@@ -2,7 +2,7 @@
 
 # Bakery.delete_all
 
-camilo = Bakery.create!(name: "Chez camilo", discription: "specialiste en petit pains", street: "boulvard camilo", zip: 34 , city:"Monaco", latitude: 345, longitude: 345)
+camilo = Bakery.create!(name: "Chez camilo", discription: "specialiste en petit pains", street: "boulvard camilo", address: "16 Villa Gaudelet, Paris", zip: 34 , city:"Monaco", latitude: 345, longitude: 345)
 
 Product.create!(name: "Tango", details: "Home made", price: 7, bakery: camilo)
 
