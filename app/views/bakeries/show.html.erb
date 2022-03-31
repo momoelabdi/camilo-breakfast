@@ -7,10 +7,11 @@
 <div class="card-product">
   <%= image_tag "bakpic.jpg",class: "pic" %>
   <div class="card-product-infos">
+  <div class="add-product">+</div>
     <% @bakery.products.each do |product| %>
       <h2><%= product.name %></h2>
-      <p><%= product.details %></p>
-      <p><strong><%= product.price %>:CHF</strong></p>
+      <span class="product-detail"><p><%= product.details %></p></span>
+      <p class="product-price"><%= product.price %> CHF</p>
     <% end %>
   </div>
 </div>
