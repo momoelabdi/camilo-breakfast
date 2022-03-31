@@ -1,7 +1,7 @@
 class BakeriesController < ApplicationController
   def index
     if params["query"].present?
-      @bakeries = Bakery.where("address ILIKE ?", "%#{params["query"]}%")
+      @bakeries = Bakery.where("name ILIKE ?", "%#{params["query"]}%")
     else
       @bakeries = Bakery.all
     end
