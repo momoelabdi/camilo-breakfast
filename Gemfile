@@ -27,7 +27,7 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 
 #Cloudinary
 gem 'dotenv-rails', groups: [:development, :test]
-
+gem 'cloudinary', '~> 1.16.0'
 
 
 # Use Active Storage variant
@@ -70,4 +70,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "geocoder"
