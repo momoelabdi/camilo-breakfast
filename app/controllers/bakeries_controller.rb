@@ -1,6 +1,12 @@
 class BakeriesController < ApplicationController
   def index
     @bakery = Bakery.all
+    @markers = @bakery.geocoded.map do |bakery|
+      {
+        lat: bakery.latitude,
+        lng: bakery.longitude
+      }
+    end
   end
 
   def show
