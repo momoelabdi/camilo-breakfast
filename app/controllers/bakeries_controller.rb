@@ -11,10 +11,10 @@ class BakeriesController < ApplicationController
   end
 
   def show
-    @bakery = Bakery.find(params[:id])
+    @bakeries = Bakery.find(params[:id])
   end
 
-  # private
+  private
 
   # def product_params
   #   params.require(:product).permit(:name, :details, :price, :discription)
