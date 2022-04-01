@@ -1,6 +1,6 @@
 class BakeriesController < ApplicationController
   def index
-    @bakery = Bakery.all
+    @bakeries = Bakery.all
   end
 
   def show
