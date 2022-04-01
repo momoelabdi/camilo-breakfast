@@ -13,8 +13,11 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @bakery = Bakery.find(params[:bakery_id])
     @order.bakery = @bakery
-    @bakery.save
+    if @bakery.save
     redirect_to bakery_path(@bakery)
+    else
+      render :new
+    end
   end
 
   private
