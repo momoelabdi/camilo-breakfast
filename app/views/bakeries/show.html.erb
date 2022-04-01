@@ -1,7 +1,8 @@
 <%= image_tag "show.jpg", id: 'pig'%>
 <div class="bakery_card">
-  <h1><%= @bakeries.name %></h1>
-  <p><%= @bakeries.street %>, <%= @bakeries.zip %>, <%= @bakeries.city %></p>
+  
+  <h1><%= @bakery.name %></h1>
+  <p><%= @bakery.address %> <%= @bakery.zip %> <%= @bakery.city %></p>
 </div>
 
 <% @bakeries.products.each do |product| %>

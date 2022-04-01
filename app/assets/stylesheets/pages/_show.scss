@@ -8,30 +8,24 @@
 }
 
 .bakery_card {
+  margin-left: 16px;
   h1 {
     font-weight: 800;
     padding-top: 30px;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 13px;
   }
 
   p {
     font-weight: lighter;
-    border-bottom: 1px solid $brown-color ;
-    text-align: center;
-    margin-bottom: 22px;
   }
 }
 
 .card-product {
-  margin: 4px;
+  margin: 30px;
   display: flex;
   border-radius: 8px;
-  box-shadow: 3px 3px 10px #e3b7a0;
-  position: inherit;
-  border-radius: 8%;
-  padding: 20px 4px;
+  box-shadow: 3px 3px 10px $troisieme-color;
+  position: relative;
 
   .add-product {
     height: 21px;
