@@ -36,3 +36,12 @@ export default class extends Controller {
     });
   }
 }
+
+// if (navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(function(position) {
+//     var pos = {
+//       lat: position.coords.latitude,
+//       lng: position.coords.longitude
+//     };
+//   })
+// }
