@@ -25,13 +25,13 @@
 }
 
 .card-product {
-  margin: 4px;
+  margin: 27px;
   display: flex;
   border-radius: 8px;
   box-shadow: 3px 3px 10px #e3b7a0;
   position: inherit;
   border-radius: 8%;
-  padding: 20px 4px;
+  padding: 1px 2px;
 
   .add-product {
     height: 21px;
@@ -41,7 +41,7 @@
     color: $secondary-color;
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 45px;
     display: flex;
     justify-content: center;
     align-items: center;

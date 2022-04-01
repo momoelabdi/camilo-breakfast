@@ -1,6 +1,6 @@
 class BakeriesController < ApplicationController
   def index
-    @bakery = Bakery.all
+    @bakeries = Bakery.all
   end
 
   def show
@@ -10,6 +10,6 @@ class BakeriesController < ApplicationController
   # private
 
   # def product_params
-  #   params.require(:product).permit(:name, :details, :price, :discription)
+  #   params.require(:product).permit(:name, :details, :price, :discription, :photo)
   # end
 end
