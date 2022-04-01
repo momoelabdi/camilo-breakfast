@@ -1,23 +1,14 @@
 class OrdersController < ApplicationController
-
   def my_orders
     @order = Order.all
   end
 
-  def new
-    @bakery = Bakery.find(params[:bakery_id])
-    @order = Order.new
-  end
+  def add_to_basket
+    @product = Product.find(params[:product_id])
+    @order = Order.find_or_create_by(user: current_user, status: :pending, bakery: @product.bakery)
+    @basket = Basket.create(order: @order, product: @product)
 
-  def create
-    @order = Order.new(order_params)
-    @bakery = Bakery.find(params[:bakery_id])
-    @order.bakery = @bakery
-    if @bakery.save
-    redirect_to bakery_path(@bakery)
-    else
-      render :new
-    end
+    redirect_to my_orders_path
   end
 
   private

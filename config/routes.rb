@@ -6,11 +6,9 @@ Rails.application.routes.draw do
     devise_scope :user do
       get '/' => 'devise/sessions#new'
     end
+    devise_for :users
   end
-  devise_for :users
-  resources :bakeries, only: [:index, :show] do
-    resources :orders, only: [:new, :create, :show]
-  end
-
+  resources :bakeries, only: [:index, :show]
+  post "/add_to_basket", to: "orders#add_to_basket"
   get "/my_orders", to: "orders#my_orders"
 end
