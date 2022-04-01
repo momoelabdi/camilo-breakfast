@@ -8,6 +8,7 @@
 }
 
 .bakery_card {
+  margin-left: 16px;
   h1 {
     font-weight: 800;
     padding-top: 30px;
@@ -16,7 +17,6 @@
 
   p {
     font-weight: lighter;
-    border-bottom: 1px solid $brown-color ;
   }
 }
 
