@@ -21,17 +21,19 @@
       color: red;
     }
 
-    li a {
-    }
-
     li a ion-icon {
       color: black;
       font-size: 30px;
-      transition: all .3s;
+      // transition: all .3s;
 
       &:hover {
-        transform: scale(1.7);
+        // transform: scale(1.7);
       }
     }
   }
+}
+
+.button-selec {
+  transition: all .3s;
+  transform: scale(1.5);
 }

@@ -2,17 +2,29 @@
   <ul>
     <li>
       <a href="<%= root_path %>">
-        <ion-icon name="home" ></ion-icon>
+        <% if current_page?(root_path)%>
+          <ion-icon name="home" class="button-selec"></ion-icon>
+        <% else %>
+          <ion-icon name="home" ></ion-icon>
+        <% end %>
       </a>
     </li>
     <li>
       <a href="<%= bakeries_path %>">
-        <ion-icon name="search"></ion-icon>
+        <% if current_page?(bakeries_path)%>
+          <ion-icon name="search" class="button-selec"></ion-icon>
+        <% else %>
+          <ion-icon name="search"></ion-icon>
+        <% end %>
       </a>
     </li>
     <li>
       <a href="<%=  my_orders_path %>">
-        <ion-icon name="cart"></ion-icon>
+        <% if current_page?(my_orders_path)%>
+          <ion-icon name="cart" class="button-selec"></ion-icon>
+        <% else %>
+          <ion-icon name="cart"></ion-icon>
+        <% end %>
       </a>
     </li>
     <li>
