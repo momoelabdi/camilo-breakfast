@@ -1,3 +1,7 @@
+<div style="width: 100%; height: 75vh; pading: 40%"
+data-controller="mapbox"
+data-mapbox-markers-value="<%= @markers.to_json %>"
+data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 <div class="container">
   <div class="row">
     <div class="col">
@@ -19,8 +23,3 @@
     </div>
   </div>
 </div>
-
-<div style="width: 100%; height: 500px; pading: 40%"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
