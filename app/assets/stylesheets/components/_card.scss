@@ -34,6 +34,8 @@
   padding-bottom: 22px;
   box-shadow: 3px 3px 10px var(--last-color);
   border-radius: 8px;
+  // width: 100%;
+  height: 250px;
 
   .name {
     font-size: 23px;
@@ -52,11 +54,13 @@
 }
 
 .img-bakery {
+  height: 150px;
   img {
-    background-size:cover ;
     border-radius: 8px 8px 0 0;
     width: 100%;
-    height: 100px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 
   }
   // background: #000;
