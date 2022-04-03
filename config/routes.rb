@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   end
   devise_for :users
   resources :bakeries, only: [:index, :show]
-
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  post "/add_to_basket", to: "orders#add_to_basket"
+  get "/my_orders", to: "orders#my_orders"
 end
