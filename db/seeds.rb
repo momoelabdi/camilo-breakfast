@@ -3,7 +3,7 @@
 # Bakery.destroy_all
 # Product.delete_all
 
-camilo = Bakery.create!(name: "Chez camilo", discription: "specialiste en petit pains", street: "boulvard camilo", address: "16 Villa Gaudelet", zip: 34 , city:"Lausanne", latitude: 48.8582, longitude: 2.2945)
+camilo = Bakery.create!(name: "Grob", discription: "specialiste en petit pains", street: "boulvard camilo", address: "16 Villa Gaudelet", zip: 34 , city:"Lausanne", latitude: 48.8582, longitude: 2.2945)
 # Order.cerate!(user_id: 3, product_id: 7)
 # camilo = Bakery.create!(name: "Chez Camilo", discription: "specialiste en petit pains", street: "boulvard camilo", zip: 34 , city:"Monaco", latitude: 345, longitude: 345)
 
