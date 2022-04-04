@@ -29,7 +29,6 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 gem 'simple_form', github: 'heartcombo/simple_form'
 
 #Cloudinary
-gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
 
 # Use Active Storage variant
