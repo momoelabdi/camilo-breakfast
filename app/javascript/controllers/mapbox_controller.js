@@ -15,19 +15,27 @@ export default class extends Controller {
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10"
     })
+
+
+  //   const map = new mapboxgl.Map({
+  //   container: 'map',
+  // });
+
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
 
     // Afficher la barre de recherche dans la map index
-    this.map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl }))
-
-    // Add the control to the map.
-    const geocoder = new MapboxGeocoder({
+    this.map.addControl(new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl
+      mapboxgl: mapboxgl }));
+
+
+      // Add the control to the map.
+      const geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
       });
-    document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+      document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
   }
 
@@ -35,7 +43,9 @@ export default class extends Controller {
     console.log(this.markersValue)
     this.markersValue.forEach((marker) => {
       const popup = new mapboxgl.Popup().setHTML(marker.info_window) // add this
-      new mapboxgl.Marker()
+      new mapboxgl.Marker({
+        color: "#EF476F",
+      })
         .setLngLat([ marker.lng, marker.lat ])
         .setPopup(popup) // add this
         .addTo(this.map)
@@ -47,13 +57,5 @@ export default class extends Controller {
     this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
-}
 
-// if (navigator.geolocation) {
-//   navigator.geolocation.getCurrentPosition(function(position) {
-//     var pos = {
-//       lat: position.coords.latitude,
-//       lng: position.coords.longitude
-//     };
-//   })
-// }
+}

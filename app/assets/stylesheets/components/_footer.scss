@@ -21,9 +21,9 @@
       color: red;
     }
 
-    li a ion-icon {
-      color: black;
-      font-size: 30px;
+    li a {
+      color: rgba(66, 66, 66, 0.512);
+      font-size: 26px;
       // transition: all .3s;
 
       &:hover {
@@ -34,6 +34,8 @@
 }
 
 .button-selec {
-  transition: all .3s;
-  transform: scale(1.5);
+  transition: all 0.7s;
+  transform: scale(1.7);
+  color: #000;
+
 }

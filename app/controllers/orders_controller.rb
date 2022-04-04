@@ -7,8 +7,7 @@ class OrdersController < ApplicationController
     @product = Product.find(params[:product_id])
     @order = Order.find_or_create_by(user: current_user, status: :pending, bakery: @product.bakery)
     @basket = Basket.create(order: @order, product: @product)
-
-    redirect_to my_orders_path
+      redirect_to my_orders_path
   end
 
   private
