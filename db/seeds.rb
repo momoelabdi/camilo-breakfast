@@ -1,4 +1,4 @@
-require 'faker'
+require "open-uri"
 
 # Bakery.destroy_all
 # Product.delete_all
@@ -9,6 +9,9 @@ camilo = Bakery.create!(name: "Chez camilo", discription: "specialiste en petit 
 
 # Product.create!(name: "Tango", details: "Home made", price: 7, bakery: camilo)
 Product.create!(name: "Panier suprise", details: "Pain au chocolat", price: 10.90, bakery: camilo)
+
+URI.open('https://res.cloudinary.com/test2023/image/upload/v1648813535/592957c861d621e6154531e6da95597a_bpjuph.jpg')
+Bakery.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
   Bakery.create!(name: 'Restaurant du Pont', address: 'Parc dinu-lipatti 13')
   Product.create!(name: Faker::Games::LeagueOfLegends.champion, details: Faker::Games::LeagueOfLegends.quote, price: Faker::Number.decimal(l_digits: 2), bakery: Bakery.last)
