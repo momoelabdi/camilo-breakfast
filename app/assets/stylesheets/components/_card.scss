@@ -25,21 +25,22 @@
       text-decoration: none;
       color: black;
     }
+
+
   }
 
 .card-bakery {
   position: relative;
-  // border: 1px solid red;
-  margin: 16px 16px 30px 16px;
-  padding-bottom: 22px;
-  box-shadow: 3px 3px 10px var(--last-color);
-  border-radius: 8px;
-  // width: 100%;
+  margin: 1px 41px 27px 33px;
+  padding-bottom: 43px;
+  box-shadow: 5px 3px 10px var(--last-color);
+  border-radius: 28px 28px 4px 4px;
   height: 250px;
+  padding: 0px;
 
   .name {
-    font-size: 23px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 650;
 
     li {
       padding-top: 20px;
@@ -47,7 +48,7 @@
   }
 
   .street {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: lighter;
     opacity: 0.8;
   }
