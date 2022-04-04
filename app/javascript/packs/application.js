@@ -14,3 +14,5 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder";

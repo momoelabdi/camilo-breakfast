@@ -1,25 +1,7 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1 class="h2 my-3 d-flex justify-content-center">Bakeries near me</h1>
-
-      <div data-controller="search-bakeries">
-        <%= form_with url: bakeries_path, method: :get, html: { class: "mb-4", data: { search_bakeries_target: "form" } } do |f| %>
-          <%= f.text_field :query,
-                           class: "form-control",
-                           placeholder: "Type your position",
-                           value: params[:query],
-                            data: {
-                              search_bakeries_target: "input",
-                              action: "keyup->search-bakeries#update"
-                            } %>
-        <% end %>
-        <%# <%= render "", bakeries: @bakeries %>
-      </div>
-    </div>
-  </div>
-</div>
-<div style="width: 100%; height: 500px; pading: 40%"
+<div id="map">
+  <div style="width: 100%; height: 75vh; pading: 40%"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+</div>
+<div id="geocoder" class="geocoder"></div>
