@@ -1,13 +1,11 @@
 <h1>My order</h1>
 
-  <% current_user.current_order.products.each do |product| %>
-    <div class="card-product">
-        <%= image_tag "bakpic.jpg",class: "pic" %>
-      <div class="card-product-infos">
-        <h2><%= product.bakery.name %></h2>
-        <p> <%= product.details%> <br> Fruits Jus <br> Coffee </p>
-        <p>  <strong><%= product.price %> CHF</strong></p>
-      </div>
-        <%# <%= link_to "bakeries" bakeries_path %>
+<% current_user.current_order.products.each do |product| %>
+  <div class="card-product">
+      <%= image_tag "bakpic.jpg",class: "pic" %>
+    <div class="card-product-infos">
+      <h2><%= product.bakery.name %></h2>
+      <h3> <%= product.details%></h3>
+      <p>  <strong><%= product.price %> CHF</strong></p>
     </div>
   <% end %>
