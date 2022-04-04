@@ -1,7 +1,8 @@
-<div id="map">
-  <div style="width: 100%; height: 75vh; pading: 40%"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-</div>
-<div id="geocoder" class="geocoder"></div>
+<section>
+  <div id="map">
+    <div style="width: 100%; height: 100%; pading: 40%"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  </div>
+</section>

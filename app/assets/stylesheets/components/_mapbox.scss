@@ -1,13 +1,13 @@
-.hydrated{
-  position: relative;
-}
 
-.mapboxgl-ctrl-geocoder {
-  max-width: none;
-  width: 100%;
-  box-shadow: none;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  left: 10px;
+
+// La map
+section {
+  height: 100vh;
+  #map {
+    height: 100%;
+
+    .mapboxgl-ctrl-geocoder {
+      width: 100%;
+    }
+  }
 }
