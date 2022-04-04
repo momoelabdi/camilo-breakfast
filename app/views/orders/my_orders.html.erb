@@ -4,8 +4,9 @@
   <div class="card-product">
       <%= image_tag "bakpic.jpg",class: "pic" %>
     <div class="card-product-infos">
-      <h2><%= product.bakery.name %></h2>
-      <h3> <%= product.details%></h3>
+      <h2><%= product.name %></h2>
+      <p><%= product.details%></p>
       <p>  <strong><%= product.price %> CHF</strong></p>
     </div>
-  <% end %>
+  </div>
+<% end %>
