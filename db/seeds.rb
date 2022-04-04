@@ -18,12 +18,12 @@ Product.delete_all
   Bakery.create!(name: 'Confiserie Nessi', address: 'Avenue du Temple 65', discription: 'Depuis le début notre devise a toujours été : Le plaisir de faire plaisir.
     C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.' ,street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
 
-  Product.create!(name:"Déjeuner paysanne", details:"cafe, Petit pain, Omlete, Jus d'orange", price: 8, bakery: Bakery.last)
+  Product.create!(name:"Déjeuner paysanne", details:"cafe, Petit pain, Omlete, Jus d'orange", price: 8,)
 
 
   # Boulangerie Millioud Sàrl
   Bakery.create!(name: 'Boulangerie Millioud', address: 'Rue Pré-du-Marché 13, 1004 Lausanne', discription:'La Boulangerie Millioud est une entreprise crée en 1896 par Emile Millioud. Ensuite, son fils Robert reprend le flambeau ainsi que son petit-fils Marcel.', street: 'http://www.boulangerie-millioud.ch/resources/slide_1.jpg?1648992840865')
-  Product.create!(name:"Cafe Fleur", details:"cafe, andwiche au salami, Jus de fruits ", price: 9, bakery: Bakery.last)
+  Product.create!(name:"Cafe Fleur", details:"cafe, sandwiche au salami, Jus de fruits ", price: 9, bakery: Bakery.last)
 
 
   # Boulangerie Bread Store
@@ -37,4 +37,4 @@ Product.delete_all
 
   # David Banchet
   Bakery.create!(name: 'Chocolaterie et Boulangerie David Banchet', discription: "Dans notre bar à chocolat, vous trouverez des produits haut de gamme de confection artisanale, élaborés à partir de matières premières éthiques et de qualité irréprochable.", address: "Rue de l'Industrie, 1290 Versoix", street: 'https://bin.staticlocal.ch/localplace-images/c9/c98011cf7b37d6ee7521f0a24f522f7cf7a9f049/David%20Banchet%20LOGO%20Photo.jpg')
-  Product.create!(name:"Matin paysanne ", details:"cafe, Petit pain, snadwich au trois Fromages, Jus d'orange", price: 6, bakery: Bakery.last)
+  Product.create!(name:"Matin paysanne ", details:"cafe, Petit pain, snadwiche au trois Fromages, Jus d'orange", price: 6, bakery: Bakery.last)
