@@ -1,7 +1,6 @@
 class BakeriesController < ApplicationController
   def index
     @bakeries = Bakery.all
-
     @markers = @bakeries.geocoded.map do |flat|
       {
         lat: flat.latitude,
@@ -17,6 +16,6 @@ class BakeriesController < ApplicationController
   private
 
   # def product_params
-  #   params.require(:product).permit(:name, :details, :price, :discription)
+  #   params.require(:product).permit(:name, :details, :price, :discription, :photo)
   # end
 end
