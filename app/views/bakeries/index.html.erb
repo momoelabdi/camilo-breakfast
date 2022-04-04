@@ -1,11 +1,8 @@
 <%= render 'shared/navbar' %>
 <section>
-  <div class="cards-bakery">
-    <div style="width: 100%; height: 300px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div id="map2"></div>
 
+  <div class="cards-bakery">
     <ul>
       <% @bakeries.each do |bakery| %>
         <a href="<%= bakery_path(bakery) %>">
@@ -15,7 +12,7 @@
               <img src="<%= bakery.street %>" alt="">
             </div>
             <span class="name"><li><%= bakery.name %></li></span>
-            <span class="street"><li>Address :<%= bakery.address %> <%= bakery.zip %> <%= bakery.city %></li></span>
+            <span class="street"><li><%= bakery.address %></li></span>
           </div>
         </a>
       <% end %>

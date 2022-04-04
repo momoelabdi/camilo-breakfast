@@ -1,2 +1,6 @@
-<h2><%= bakery.name %></h2>
-<p><%= bakery.address %></p>
+<div class="popup-mapbox">
+  <%= link_to bakery_path(bakery) do%>
+    <h2><%= bakery.name %></h2>
+    <p><%= bakery.address %></p>
+  <% end %>
+</div>
