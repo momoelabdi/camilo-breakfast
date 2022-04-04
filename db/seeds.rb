@@ -16,7 +16,7 @@ Product.delete_all
 
 # Confiserie Nessi
   Bakery.create!(name: 'Confiserie Nessi', address: 'Avenue du Temple 65', discription: 'Depuis le début notre devise a toujours été : Le plaisir de faire plaisir.
-    C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.' ,street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
+    C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.', street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
 
   Product.create!(name: Faker::Games::LeagueOfLegends.champion, details: Faker::Games::LeagueOfLegends.quote, price: Faker::Number.decimal(l_digits: 2), bakery: Bakery.last)
 
