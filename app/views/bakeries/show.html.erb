@@ -1,10 +1,10 @@
 <img src="<%= @bakeries.street %>" alt="" id="pig">
 <div class="bakery_card">
+<h1><%= @bakeries.name %></h1>
+<p><%= @bakeries.address %>, <%= @bakeries.zip %>, <%= @bakeries.city %>,
+<%= @bakeries.discription%>.</p>
 
-  <h1><%= @bakeries.name %></h1>
-  <p><%= @bakeries.address %> <%= @bakeries.zip %> <%= @bakeries.city %></p>
 </div>
-
 <% @bakeries.products.each do |product| %>
   <div class="card-product">
     <%= image_tag "bakpic.jpg",class: "pic" %>
