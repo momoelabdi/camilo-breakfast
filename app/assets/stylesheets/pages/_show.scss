@@ -4,11 +4,23 @@
   height: 300px;
   // left: 0px;
   top: 0px;
-
+  position: relative;
 }
+
+  .arrow-back {
+    position: absolute;
+    font-size: 50px;
+    left: 16px;
+    top: 16px;
+    z-index: 3;
+    color: #000;
+  }
 
 .bakery_card {
   margin-left: 16px;
+  position: relative;
+
+
   h1 {
     font-weight: 800;
     padding-top: 30px;
