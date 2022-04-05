@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :charges
   authenticated :user do
     root to: 'pages#home'
   end
