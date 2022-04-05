@@ -17,12 +17,13 @@ Product.delete_all
 # Confiserie Nessi
   Bakery.create!(name: 'Confiserie Nessi', address: 'Avenue du Temple 65', discription: 'Depuis le début notre devise a toujours été : Le plaisir de faire plaisir.
     C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.', street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
-
-  Product.create!(name:"Déjeuner paysanne", details:"cafe, Petit pain, Omlete, Jus d'orange", price: 8,)
+  Product.create!(name:"Déjeuner paysanne", details:"cafe, Sandwich omelette, Jus d'orange", price: 14.90,bakery: Bakery.last)
+  Product.create!(name:"La laitière", details:"Caffe Latte, Extra croissant, Branch", price: 9.90,bakery: Bakery.last)
 
 
   # Boulangerie Millioud Sàrl
   Bakery.create!(name: 'Boulangerie Millioud', address: 'Rue Pré-du-Marché 13, 1004 Lausanne', discription:'La Boulangerie Millioud est une entreprise crée en 1896 par Emile Millioud. Ensuite, son fils Robert reprend le flambeau ainsi que son petit-fils Marcel.', street: 'http://www.boulangerie-millioud.ch/resources/slide_1.jpg?1648992840865')
+  Product.create!(name:"Cafe Fleur", details:"Capuccino, ", price: 10.00, bakery: Bakery.last)
   Product.create!(name:"Cafe Fleur", details:"cafe, sandwiche au salami, Jus de fruits ", price: 9, bakery: Bakery.last)
 
 
