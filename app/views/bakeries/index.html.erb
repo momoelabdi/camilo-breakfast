@@ -7,11 +7,11 @@
       <% @bakeries.each do |bakery| %>
         <a href="<%= bakery_path(bakery) %>">
 
-          <div class="card-bakery">
+          <div class="card-bakery" style="text-align: center">
             <div class="img-bakery">
               <img src="<%= bakery.street %>" alt="">
             </div>
-            <span class="name"><li><%= bakery.name %></li></span>
+            <span class="name"  style="align-items:center;"><li><%= bakery.name %></li></span>
             <span class="street"><li><%= bakery.address %></li></span>
           </div>
         </a>
