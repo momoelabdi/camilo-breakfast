@@ -1,8 +1,11 @@
 <img src="<%= @bakeries.street %>" alt="" id="pig">
+<%= link_to bakeries_path do %>
+  <ion-icon name="ios-arrow-dropleft" class="arrow-back"></ion-icon>
+<% end %>
 <div class="bakery_card">
-<h1><%= @bakeries.name %></h1>
-<p><%= @bakeries.address %>
-<%= @bakeries.discription%></p>
+  <h1><%= @bakeries.name %></h1>
+  <p><%= @bakeries.address %>
+  <%= @bakeries.discription%></p>
 
 </div>
 <% @bakeries.products.each do |product| %>
