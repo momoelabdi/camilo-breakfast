@@ -1,5 +1,5 @@
 <div class="nbar"><h1><strong>My orders</strong></h1></div>
-  <% operator = 0 %>
+
 <% current_user.current_order.products.each do |product| %>
   <div class="card-product">
       <%= image_tag "bakpic.jpg",class: "pic" %>
@@ -8,7 +8,9 @@
       <p><%= product.details%></p>
       <h2>  <strong><%= product.price %>0 CHF</strong></h2>
       <%# <h2><strong><%= total += product.price %></strong></h2>
-      <h4>Total : <strong><%= operator += product.price %>0 CHF</strong></h4>
     </div>
   </div>
+
 <% end %>
+
+<h1>the total is <%Product.sum(:price) %></h1>
