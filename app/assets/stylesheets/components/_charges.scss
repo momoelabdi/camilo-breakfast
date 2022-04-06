@@ -1,0 +1,52 @@
+.create-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  ion-icon {
+    font-size: 120px;
+    color: #BF9270;
+    margin-top: 53px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+
+    #number-order {
+      color: $brown-color;
+      font-weight: 900;
+      text-decoration: dotted;
+    }
+  }
+
+  .qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    p {
+      font-size: 25px;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .button-backhome {
+    background: $brown-color;
+    font-size: 20px;
+    padding: 23px 72px;
+    border-radius: 100px;
+    margin-top: 102px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
