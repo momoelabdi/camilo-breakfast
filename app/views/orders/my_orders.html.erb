@@ -1,8 +1,8 @@
 <div class="nbar"><h1><strong>My orders</strong></h1></div>
+
 <% @products.each do |product| %>
   <div class="card-product">
-  <%# Taille à changer %>
-      <img src="<%= product.img %>" alt="" style="height:100px; width:100px;">
+    <img src="<%= product.img %>" alt="" class="pic">
     <div class="card-product-infos">
       <h2><%= product.name %></h2>
       <p><%= product.details%></p>
@@ -10,6 +10,7 @@
     </div>
   </div>
 <% end %>
+
 <div class="button-pay-stripe">
   <%= form_tag charges_path do %>
       <article>
@@ -27,5 +28,4 @@
               data-locale="auto"></script>
   <% end %>
 </div>
- <div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
-
+<div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
