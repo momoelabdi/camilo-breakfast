@@ -1,12 +1,12 @@
-<h1>My order</h1>
-
-<% current_user.current_order.products.each do |product| %>
+<div class="nbar"><h1><strong>My orders</strong></h1></div>
+<% @products.each do |product| %>
   <div class="card-product">
-      <%= image_tag "bakpic.jpg",class: "pic" %>
+  <%# Taille à changer %>
+      <img src="<%= product.img %>" alt="" style="height:100px; width:100px;">
     <div class="card-product-infos">
       <h2><%= product.name %></h2>
       <p><%= product.details%></p>
-      <p>  <strong><%= product.price %> CHF</strong></p>
+      <h2>  <strong><%= product.price %>0 CHF</strong></h2>
     </div>
   </div>
 <% end %>
@@ -27,3 +27,5 @@
               data-locale="auto"></script>
   <% end %>
 </div>
+ <div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
+
