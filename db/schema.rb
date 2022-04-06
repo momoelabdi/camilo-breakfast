@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_01_115534) do
+ActiveRecord::Schema.define(version: 2022_04_05_075758) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,7 +53,6 @@ ActiveRecord::Schema.define(version: 2022_04_01_115534) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "adress"
     t.string "address"
   end
 
@@ -83,6 +82,7 @@ ActiveRecord::Schema.define(version: 2022_04_01_115534) do
     t.bigint "bakery_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "img"
     t.index ["bakery_id"], name: "index_products_on_bakery_id"
   end
 

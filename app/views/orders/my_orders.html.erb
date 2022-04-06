@@ -1,7 +1,8 @@
 <div class="nbar"><h1><strong>My orders</strong></h1></div>
 <% @products.each do |product| %>
   <div class="card-product">
-      <%= image_tag "bakpic.jpg",class: "pic" %>
+  <%# Taille à changer %>
+      <img src="<%= product.img %>" alt="" style="height:100px; width:100px;">
     <div class="card-product-infos">
       <h2><%= product.name %></h2>
       <p><%= product.details%></p>

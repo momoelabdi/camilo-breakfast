@@ -10,7 +10,8 @@
 
 <% @bakeries.products.each do |product| %>
   <div class="card-product">
-    <%= image_tag "bakpic.jpg",class: "pic" %>
+  <%# Taille provisoire, à change dans les styles (style="") %>
+    <img src="<%= product.img %>" class: "pic" style="height:100px; width:100px;">
     <div class="card-product-infos">
       <div class="add-product">
         <%= link_to '+', add_to_basket_path(product_id: product.id), method: :post %>
