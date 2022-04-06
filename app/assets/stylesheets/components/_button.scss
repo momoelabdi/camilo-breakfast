@@ -23,12 +23,18 @@
     }
 }
 
-// height: 30px;
-// width: 58px;
-// left: 228px;
-// top: 86px;
-// border-radius: 0px;
+.button-pay-stripe {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 28px;
+    .stripe-button-el {
+      border: none !important;
+      background-image: none;
 
-// font-family: Roboto;
-// font-size: 14px;
-// font-style: normal;
+        span {
+          background-color: $brown-color !important;
+          background-image: none;
+          border: none !important;
+        }
+    }
+}
