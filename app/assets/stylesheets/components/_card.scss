@@ -100,8 +100,7 @@
     }
 }
 // Animation ball
-.holder:before,
-.holder:after {
+.holder:before {
   animation: orbit 5s linear infinite;
   border-radius: 50%;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
@@ -111,8 +110,8 @@
   width: 150px;
 }
 
+// Radial gradient de la boule orange (haut)
 .holder:before {
-  animation-delay: 2.5s;
   background: #ffe897;
   background: -moz-radial-gradient(top right, #ffe897, #f98a05);
   background: radial-gradient(to bottom left, #ffe897, #f98a05);
