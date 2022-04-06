@@ -22,3 +22,20 @@
       text-align: center;
     }
 }
+
+.button-pay-stripe {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 28px;
+    .stripe-button-el {
+      border: none !important;
+      background-image: none;
+
+        span {
+          background-color: $brown-color !important;
+          background-image: none;
+          border: none !important;
+        }
+    }
+}
+

@@ -242,6 +242,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stripe (5.48.0)
     thor (1.2.1)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -305,6 +306,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   simple_form!
   spring
+  stripe
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
@@ -315,4 +317,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.3.9
+   2.3.6

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CamiloBreakfast</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+      <%# Icon - CSS.GG %>
+      <link href='https://css.gg/css' rel='stylesheet'>
+    </head>
+    <body>
+      <%= yield %>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+  </html>

@@ -11,7 +11,7 @@ Product.delete_all
     C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.', street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
   Product.create!(name:"Déjeuner paysanne", details:"Café Large, Pain au chocolat, Jus d'orange", price: 14.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80](https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80)")
   Product.create!(name:"La laitière", details:"Caffe Latte, Croissant au beurre", price: 7.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1583338917451-face2751d8d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")
-
+  Product.create!(name:"Déjeuner paysanne", details:"cafe, Petit pain, Omlete, Jus d'orange", price: 8,bakery: Bakery.last)
 
 
   # Boulangerie Millioud Sàrl
