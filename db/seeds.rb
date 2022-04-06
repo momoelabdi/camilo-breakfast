@@ -30,4 +30,4 @@ Product.delete_all
 
   # David Banchet
   Bakery.create!(name: 'Chocolaterie et Boulangerie David Banchet', discription: "Dans notre bar à chocolat, vous trouverez des produits haut de gamme de confection artisanale, élaborés à partir de matières premières éthiques et de qualité irréprochable.", address: "Rue de l'Industrie, 1290 Versoix", street: 'https://bin.staticlocal.ch/localplace-images/c9/c98011cf7b37d6ee7521f0a24f522f7cf7a9f049/David%20Banchet%20LOGO%20Photo.jpg')
-  Product.create!(name:"Good Morning ", details:"Americano, Jus de poirre, Bananes", price: 6.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
+  Product.create!(name:"Good Morning ", details:"Americano, Croissant au jambon", price: 6.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
