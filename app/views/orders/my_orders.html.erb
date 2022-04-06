@@ -12,6 +12,7 @@
 <% end %>
 
 <div class="button-pay-stripe">
+<div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
   <%= form_tag charges_path do %>
       <article>
         <% if flash[:error].present? %>
@@ -28,4 +29,3 @@
               data-locale="auto"></script>
   <% end %>
 </div>
-<div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
