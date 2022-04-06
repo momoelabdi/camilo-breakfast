@@ -13,6 +13,7 @@ Product.delete_all
   Product.create!(name:"La laitière", details:"Caffe Latte, Croissant au beurre", price: 7.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1583338917451-face2751d8d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")
 
 
+
   # Boulangerie Millioud Sàrl
   Bakery.create!(name: 'Boulangerie Millioud', address: 'Rue Pré-du-Marché 13, 1004 Lausanne', discription:'La Boulangerie Millioud est une entreprise crée en 1896 par Emile Millioud. Ensuite, son fils Robert reprend le flambeau ainsi que son petit-fils Marcel.', street: 'http://www.boulangerie-millioud.ch/resources/slide_1.jpg?1648992840865')
   Product.create!(name:"Panier de Fleur", details:"Capuccino, Toast à la confiture de fraise", price: 7.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80")
