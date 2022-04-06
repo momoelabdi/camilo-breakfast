@@ -2,3 +2,14 @@
   text-align: center;
   background-color:rgb(248, 235, 207);
 }
+
+.total {
+  box-sizing: content-box;
+  width: 100%;
+  // right: 100%;
+  border: solid rgb(248, 235, 207) 10px;
+  padding: 5px;
+  background-color: rgb(248, 235, 207);
+  // position: absolute;
+  bottom: 0px; right: 40px;
+}
