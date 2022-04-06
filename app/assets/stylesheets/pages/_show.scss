@@ -53,12 +53,17 @@
     align-items: center;
   }
 
-  .pic {
-    border-radius: 8px 0 0 8px;
-    width: 120px;
-    height:120px;
-    background-size: cover;
+  .img-product {
+    width: 150px;
+    height: 120px;
+      img {
+        border-radius: 8px 0 0 8px;
+        width: 100%;
+        height:100%;
+        background-size: cover;
+      }
   }
+
 
   .card-product-infos {
     width: 100%;
@@ -72,6 +77,10 @@
 
     .product-detail {
       font-weight: 200;
+
+      p {
+        margin-bottom: 0;
+      }
     }
 
     .product-price {
@@ -79,6 +88,9 @@
       position: absolute;
       bottom: 0;
       margin-bottom: 0;
+      p{
+        margin-top: 8px;
+      }
     }
   }
 }
