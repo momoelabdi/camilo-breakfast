@@ -7,12 +7,13 @@
   ion-icon {
     font-size: 120px;
     color: #BF9270;
-    margin-top: 53px;
     margin-bottom: 18px;
   }
 
   h1 {
     font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 
     #number-order {
       color: $brown-color;
@@ -32,17 +33,18 @@
     }
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 60%;
+      height: auto;
     }
   }
 
   .button-backhome {
     background: $brown-color;
     font-size: 20px;
-    padding: 23px 72px;
+    // padding: 23px 72px;
+    padding: 23px 42px;
     border-radius: 100px;
-    margin-top: 102px;
+    margin-top: 71px;
 
     a {
       text-decoration: none;
