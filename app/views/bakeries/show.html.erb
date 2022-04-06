@@ -20,9 +20,9 @@
       </div>
           <h2><%= product.name %></h2>
           <span class="product-detail">
-          <% a = product.details.split(",") %>
-          <% a.each do |product| %>
-            <p><%= product %></p>
+            <% a = product.details.split(",") %>
+            <% a.each do |product| %>
+              <p><%= product %></p>
             <% end %>
           </span>
           <p class="product-price"><%= product.price %> CHF</p>
