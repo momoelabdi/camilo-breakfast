@@ -26,11 +26,11 @@
 .button-pay-stripe {
   display: flex;
   justify-content: flex-end;
-  margin-right: 28px;
+  margin-right: 30px;
+  // padding-top: -20%;
     .stripe-button-el {
       border: none !important;
       background-image: none;
-
         span {
           background-color: $brown-color !important;
           background-image: none;
@@ -38,4 +38,3 @@
         }
     }
 }
-

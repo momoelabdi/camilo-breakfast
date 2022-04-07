@@ -10,15 +10,14 @@
 
 <% @bakeries.products.each do |product| %>
   <div class="card-product">
-  <%# Taille provisoire, à change dans les styles (style="") %>
-    <img src="<%= product.img %>" class: "pic" style="height:100px; width:100px;">
+    <img src="<%= product.img %>" class="pic">
     <div class="card-product-infos">
       <div class="add-product">
         <%= link_to '+', add_to_basket_path(product_id: product.id), method: :post %>
       </div>
           <h2><%= product.name %></h2>
           <span class="product-detail"><p><%= product.details %></p></span>
-          <p class="product-price"><%= product.price %> CHF</p>
+          <p class="product-price"><%= product.price %>0 CHF</p>
     </div>
   </div>
 <% end %>
