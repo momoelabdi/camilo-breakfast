@@ -11,8 +11,10 @@
             <div class="img-bakery">
               <img src="<%= bakery.street %>" alt="">
             </div>
-            <span class="name"  style="align-items:center;"><li><%= bakery.name %></li></span>
-            <span class="street"><li><%= bakery.address %></li></span>
+            <div class="bakery_address">
+              <h2 style="align-items:center;"><li><%= bakery.name %></li></h2>
+              <p><li><%= bakery.address %></li></p>
+            </div>
           </div>
         </a>
       <% end %>
