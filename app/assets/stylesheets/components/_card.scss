@@ -35,7 +35,7 @@
   // padding-bottom: 43px;
   box-shadow: 5px 3px 10px var(--last-color);
   border-radius: 27px 27px 2px 2px;
-  height: 222px;
+  height: 232px;
   margin: 30px 26px;
   padding: 1px;
   // padding: 0px;
@@ -99,6 +99,8 @@
 
       .create-check {
         z-index: 888;
+        height: 100%;
+        width: 100%;
       }
     }
 }
@@ -113,7 +115,8 @@
   width: 150px;
 }
 
-// Radial gradient de la boule orange (haut)
+// Creation de la ball
+  // Radial gradient de la boule orange (haut)
 .holder:before {
   background: #ffe897;
   background: -moz-radial-gradient(top right, #ffe897, #f98a05);

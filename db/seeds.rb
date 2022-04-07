@@ -9,9 +9,8 @@ Product.delete_all
 # Confiserie Nessi
   Bakery.create!(name: 'Confiserie Nessi', address: 'Avenue du Temple 65', discription: 'Depuis le début notre devise a toujours été : Le plaisir de faire plaisir.
     C’est en 2019 que nous avons fêté nos 30 ans de loyaux services à notre fidèle clientèle.', street: 'https://static.wixstatic.com/media/8794d4_eaf251ab3daa46269a3c2f516dd29a1f~mv2.png/v1/fill/w_268,h_138,al_c,usm_0.66_1.00_0.01,enc_auto/Logo_Nessi.png')
-  Product.create!(name:"Déjeuner paysanne", details:"Café Large, Pain au chocolat, Jus d'orange", price: 14.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80](https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80)")
+  Product.create!(name:"Déjeuner paysanne", details:"Café Large, Pain au chocolat", price: 14.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80](https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80)")
   Product.create!(name:"La laitière", details:"Caffe Latte, Croissant au beurre", price: 7.90,bakery: Bakery.last, img: "https://images.unsplash.com/photo-1583338917451-face2751d8d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")
-  Product.create!(name:"Déjeuner paysanne", details:"cafe, Petit pain, Omlete, Jus d'orange", price: 8,bakery: Bakery.last)
 
 
   # Boulangerie Millioud Sàrl
@@ -27,8 +26,8 @@ Product.delete_all
 
   # Epicerie Camelia
   Bakery.create!(name: 'Epicerie Camelia', address: 'Avenue de France 36, 1004 Lausanne', discription: 'Produits BIO / Produits Locaux / Boulangerie / Café', street: 'https://bin.staticlocal.ch/localplace-images/90/9012f40c3d447f7b5c0407602c8bcd681bebdeff/camelia%204.jpg')
-  Product.create!(name:"Passion jaune ", details:"Double Espresso, Pommes, Sandwich jambon beurre", price: 18.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
+  Product.create!(name:"Passion jaune ", details:"Double Espresso, Sandwich jambon beurre", price: 18.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
 
   # David Banchet
   Bakery.create!(name: 'Chocolaterie et Boulangerie David Banchet', discription: "Dans notre bar à chocolat, vous trouverez des produits haut de gamme de confection artisanale, élaborés à partir de matières premières éthiques et de qualité irréprochable.", address: "Rue de l'Industrie, 1290 Versoix", street: 'https://bin.staticlocal.ch/localplace-images/c9/c98011cf7b37d6ee7521f0a24f522f7cf7a9f049/David%20Banchet%20LOGO%20Photo.jpg')
-  Product.create!(name:"Good Morning ", details:"Americano, Jus de poirre, Bananes", price: 6.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
+  Product.create!(name:"Good Morning ", details:"Americano, Croissant au jambon", price: 6.90, bakery: Bakery.last, img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
