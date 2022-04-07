@@ -23,18 +23,31 @@
     }
 }
 
-.button-pay-stripe {
+// Button in my_order (button pay with)
+.disply-button-stripe {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
-  // padding-top: -20%;
+  justify-content: center;
+  .button-pay-stripe {
+    position: fixed;
+    bottom:5rem;
+    // padding-top: -20%;
     .stripe-button-el {
       border: none !important;
       background-image: none;
+      border-radius: 8px;
         span {
+          margin: 0 !important;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          width: 80vw;
+          height: 3rem;
+          margin: 0 16px;
           background-color: $brown-color !important;
           background-image: none;
           border: none !important;
+          font-size: 20px;
         }
-    }
+      }
+  }
 }
