@@ -10,7 +10,6 @@
 
 <% @bakeries.products.each do |product| %>
   <div class="card-product">
-  <%# Taille provisoire, à change dans les styles (style="") %>
     <div class="img-product">
       <img src="<%= product.img %>" class="pic">
     </div>
@@ -25,7 +24,7 @@
               <p><%= product %></p>
             <% end %>
           </span>
-          <p class="product-price"><%= product.price %> CHF</p>
+          <p class="product-price"><%= product.price %>0 CHF</p>
     </div>
   </div>
 <% end %>
