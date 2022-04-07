@@ -34,6 +34,18 @@
   box-shadow: 3px 3px 10px $troisieme-color;
   position: relative;
 }
+  .add-product {
+    height: 21px;
+    width: 40px;
+    border: 1px solid $troisieme-color;
+    border-radius: 8px;
+    color: $secondary-color;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 .add-product {
   height: 21px;

@@ -1,4 +1,5 @@
-<div class="nbar"><h1><strong>My orders</strong></h1></div>
+<%= render 'shared/navbar' %>
+<div class="nbar"><h1><strong>My Orders</strong></h1></div>
 
 <% @products.each do |product| %>
   <div class="card-product">
@@ -17,22 +18,25 @@
     </div>
   </div>
 <% end %>
-<div class="order-bottom">
-  <div class="total"> <h3>TOTAL : <strong><%=@total_price %>0 CHF</strong></h3></div>
-  <div class="button-pay-stripe">
-    <%= form_tag charges_path do %>
-        <article>
-          <% if flash[:error].present? %>
-            <div id="error_explanation">
-              <p><%= flash[:error] %></p>
-            </div>
-          <% end %>
-        </article>
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="Camilo Breakfast"
-                data-amount=""
-                data-locale="auto"></script>
-    <% end %>
-  </div>
-</div>
+<%# <div class="order-bottom"> %>
+  <div class="total"> <h3><strong>Total : <%=@total_price %>0 CHF</strong></h3></div>
+  <span class="disply-button-stripe">
+    <div class="button-pay-stripe">
+      <%= form_tag charges_path do %>
+          <article>
+            <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+            <% end %>
+          </article>
+
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="Camilo Breakfast"
+                  data-amount=""
+                  data-locale="auto"></script>
+      <% end %>
+    </div>
+  </span>
+<%# </div> %>
