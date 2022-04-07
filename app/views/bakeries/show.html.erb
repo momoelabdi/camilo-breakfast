@@ -4,8 +4,8 @@
 <% end %>
 <div class="bakery_card">
   <h1><%= @bakeries.name %></h1>
-  <p><%= @bakeries.address %>
-  <%= @bakeries.discription%></p>
+  <p><%= @bakeries.address %></p>
+  <p id="bakery-description"><%= @bakeries.discription%></p>
 </div>
 
 <% @bakeries.products.each do |product| %>
