@@ -2,8 +2,12 @@ class OrdersController < ApplicationController
   def my_orders
     @products = current_user.current_order.products
     @total_price = @products.sum(&:price)
+    # raise
   end
 
+  # def products
+  #   @products = Product.all
+  # end
 
   def add_to_basket
     @product = Product.find(params[:product_id])
