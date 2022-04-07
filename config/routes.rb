@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  get "/home", to: "pages#home"
   resources :charges
   authenticated :user do
-    root to: 'pages#home'
+    root to: 'bakeries#index'
   end
   unauthenticated :user do
     devise_scope :user do
