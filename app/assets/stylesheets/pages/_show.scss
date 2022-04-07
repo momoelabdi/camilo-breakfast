@@ -44,7 +44,8 @@
   width: 40px;
   border: 1px solid $troisieme-color;
   border-radius: 8px;
-  color: $secondary-color;
+
+  background-color: bisque;
   position: absolute;
   right: 10px;
   bottom: 45px;
@@ -54,7 +55,7 @@
 
   a {
     text-decoration: none;
-    color: $brown-color;
+    color: black
   }
 }
 
